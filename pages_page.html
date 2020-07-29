@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>KN Photography</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles/main_page_style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+</head>
+<body>
+  <header> <div class="topnav" id="myTopnav">
+    <div><a href="#"><div class=".logo"><img src="./pictures/logo_rg8.png"></div></a></div>
+      <div><a href="#">HOME</a></div>
+      <div><a href="#">ABOUT</a></div>
+      <div><a href="#">PORTFOLIO</a></div>
+      <div><a href="#">PAGES</a></div>
+      <div><a href="#">CONTACT</a></div>
+      <p class="menu"><a href="javascript:void(0);" style="font-size:40px;" class="icon" onclick="myFunction()">&#9776;</a></p>
+  </div>
+  </header>
+    <div class="first-screen">
+		</div>
+    <div class="second-screen">
+      <div class="second-screen-inform">
+        <div><h1 class="head-join">WE LOVE FIJI!</h1></div>
+        <div><p class="inform-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Sed do eiusmod tempor.</p></div>
+        <div><button type="button" class="btn btn-outline-secondary">Book a photoshoot now!</button></div>
+      </div>
+      <div class="second-screen-portf">
+        <div class="portf-img"><img src="./pictures/DSC02757.JPG"></div>
+        <div class="portf-img"><img src="./pictures/DSC03206.JPG"></div>
+        <div class="portf-img"><img src="./pictures/DSC03396.JPG"></div>
+        <div class="portf-img"><img src="./pictures/DSC09482.JPG"></div>
+        <div class="portf-img"><img src="./pictures/DSC03129.JPG"></div>
+        <div class="portf-img"><img src="./pictures/DSC09468.JPG"></div>
+        <div class="portf-img"><img src="./pictures/DSC09330.JPG"></div>
+      </div>
+
+    </div>
+    
+    <main></main>
+    <footer><div class="footer">
+      <div class="social-media">
+        <div><a href="#"><img src="./icons/email.png"> example@.com</a></div>
+        <div><a href="#"><img src="./icons/whatsapp.png"> +1234567890</a></div>
+        <div><a href="#"><img src="./icons/instagram.png"> @katherineparisienne</a></div>
+        <div><a href="#"><img src="./icons/facebook.png"> Katherine Parisienne</a></div>
+      </div>
+      <div class="copyr">
+        <p>Photographer Katherine Novitska</p>
+        <p>Designed and created by Valery Novitska</p>
+        <p>2020</p>
+      </div>
+      <div class="back-to-top" onclick="topFunction()" id="back-to-top" title="Go to top"><img src="./icons/up-arrow.png"></div>
+    </div></footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script>
+
+        // hiding menu in icon when viewing site on smaller devices
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+
+        // creating back to top button:
+        mybutton = document.getElementById("back-to-top");
+
+        // when the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+</body>
+</html>
