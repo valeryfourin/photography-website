@@ -4,7 +4,31 @@ body,html{
         margin: 0px;
         padding: 0px;
 		overflow-x: hidden; 
-		
+		-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}	
+
+.lang {
+	margin: 5px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	a {
+		color: #5D6375;
+	}
+}
+
+img {
+	transition: all 1s ease-in-out;
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+}
 
 header {
 	width: 100vw;
@@ -12,25 +36,30 @@ header {
 	background-color: white;
 }
 
-.topnav {
+.logo {
 	img {
       width: 200px;
-	  height: 200px;
+	//   height: 200px;
 	}
 }
 
 .logo:hover{
 	transform: scale(1.1, 1.1);
+	transition: all 1s ease-in-out;
 }
 
-.first-screen{
-	height: 100vh;
+.navbar {
+	background-color: white;
+}
+
+.first-screen {
+	height: auto;
 	width: 100vw;
-    background-image: url(../../pictures/DSC094641.jpg);
+    /* background-image: url(../../pictures/service/shutterstock_629910674new.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
-  	background-size: cover;
+  	background-size: cover;*/
 }
 
 
@@ -39,12 +68,15 @@ header {
 	height: 100px;
 }
 
-.topnav {
-	width: 100%;
+.navbar {
 	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+.bg-light {
+	background-color: white !important;
 }
 
 @font-face {
@@ -52,7 +84,7 @@ header {
 	src: url(../../fonts/Raleway-Light.ttf);
 }
 
-.topnav {
+.navbar {
 	a {
 	float: left;
 	display: block;
@@ -85,61 +117,6 @@ header {
 	}
 }
 
-@media screen and (max-width: 850px) {
-	.topnav div:not(:first-child) {
-		visibility: hidden;
-		width: 1px;
-	}
-	.topnav a{
-		padding: 0;
-	}
-	.topnav{
-		justify-content: space-between;
-	}
-	.topnav a.icon {
-		float: right;
-		display: block;
-	}
-	.firstcontent {
-		height: auto;
-		margin-top: 30%
-	}
-	
-}
-
-
-.topnav .icon {
-	display: none;
-	// margin:auto;
-}
-
-// adjusting the header menu, transforming the header when viewed on small devices
-
-@media screen and (max-width: 850px) {
-	.topnav.responsive {
-		display: block;
-	}
-	.topnav.responsive .icon {
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	}
-	.topnav.responsive a {
-	  float: none;
-	  display: block;
-	  text-align: left;
-	  visibility: visible;
-	  
-	}
-	.topnav.responsive {
-	  float: none;
-	  display: block;
-	  width: 100%;
-	  text-align: left;
-	  background-color: white;
-	}
-}
-
 .second-screen {
 	padding: 10px;
 	width: 100vw;
@@ -148,15 +125,13 @@ header {
 
 .second-screen-inform {
 	width: 100%;
-	height: 80vh;
+	height: auto;
 	margin-right: 10px;
 	display: flex;            
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
 	background-color: #f7f4f4; 
-}
-
 }
 
 .sec-scr-text {
@@ -178,14 +153,35 @@ header {
 	flex-wrap: wrap;
 }
 
-.sm-pic img{
+.sec-scr-pic img:hover {
+	background-color: white;
+	opacity: 0.7;
+	transition: top 0.5s ease-out 0.5s;
+}
+
+.sm-pic img, .big-on-hover-pic img {
 	height: 25vh;
 	margin: 10px;
 }
 
+
 @media screen and (max-width: 1600px) {
 	.sm-pic img {
 		height: 23vh;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.second-screen-inform {flex-direction: column;}
+	.sec-scr-text {
+		width: auto;
+		margin: 20px;
+	}
+	.sm-pic img {
+		height: 20vh;
+	}
+	.sec-scr-pic {
+		width: auto;
 	}
 }
 
@@ -198,6 +194,7 @@ header {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.6em;
 	text-align: center;
+	margin: 10px;
 }
 
 .head-join{
@@ -208,9 +205,25 @@ header {
 	transition: all 1s ease-in-out;
 }
 
+
+.hello-buttons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	a {margin: 10px;}
+}
+
+@media screen and (max-width: 1370px) {
+	.hello-buttons {
+		flex-direction: column;
+	}
+}
+
 .btn-outline-secondary {
 	width: 200px;
 }
+
 
 #block-portf-img {
 	position: absolute;
@@ -229,9 +242,17 @@ header {
 
 
 .slider1 {
-	width: 60vw; 
+	width: 70vw; 
+	margin: auto;
 }
 
+#carouselExampleCaptions1 {
+	height: 100vh;
+	.d-block{
+		width: 90%;
+		margin: auto;
+	}
+}
 
 @media screen and (max-width: 850px) {
 	.slider1 {
@@ -280,7 +301,7 @@ header {
 
 .second-inf { 
 	left: 100px;
-	background-color: #f8d8ce; 
+	background-color: #f1a65e; 
 }
 
 @media screen and (max-width: 750px) {
@@ -309,38 +330,19 @@ header {
 	align-items: center;
 }
 
-.story {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 20px;
-	width: 300px;
-	height: 300px;
-	background-color: white;
-}
+.card { margin: 10px; }
 
-.story-info {
-	
-	display: none;
-}
-
-.story:hover .story-info{
-	background-color: pink;
-	width: 300px;
-	height: 300px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.card-img-top:hover {
 	background-color: white;
 	opacity: 0.7;
-	transition: top 1s ease-out 0.5s;
-	a {
-		text-decoration: none;
-	}
+	transition: top 0.5s ease-out 0.5s;
 }
 
 .stories-wrap {
 	a {
+		color: rgb(70, 68, 68);
+	}
+	a:link {
 		color: rgb(70, 68, 68);
 	}
 	a:hover {

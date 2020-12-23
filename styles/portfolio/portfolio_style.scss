@@ -1,0 +1,193 @@
+body,html{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow-x: hidden; 
+}	
+
+img {
+	transition: all 1s ease-in-out;
+}
+
+.lang {
+	margin: 5px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	a {
+		color: #5D6375;
+	}
+}
+
+header {
+	width: 100vw;
+	height: 200px;
+	background-color: white;
+}
+
+.logo {
+	img {
+      width: 200px;
+	//   height: 200px;
+	}
+}
+
+.logo:hover{
+	transform: scale(1.1, 1.1);
+	transition: all 1s ease-in-out;
+}
+
+.navbar {
+	background-color: white;
+}
+
+.first-screen {
+	// height: 75vh;
+	width: 100vw;
+	height: 50vh;
+	background-image: url(../../pictures/service/DSC094641.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+}
+
+
+.free-space {
+	width: 100%;
+	height: 100px;
+}
+
+.second-screen {
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.second-screen-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 30px;
+	width: 60vw;
+
+}
+
+
+.navbar {
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg-light {
+	background-color: white !important;
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../../fonts/Raleway-Light.ttf);
+}
+
+.navbar {
+	a {
+	float: left;
+	display: block;
+	font-family: 'Raleway', sans-serif;
+	color: rgb(70, 68, 68);
+	padding: auto;
+	text-align: center;
+	padding: 14px 16px;
+	font-size: 25px;
+	font-weight: 300;
+	}
+	a:hover {
+		color: rgb(54, 52, 52);
+	}
+}
+
+
+@font-face {
+	font-family: 'Montserrat';
+	src: url(../../fonts/Montserrat-Light.ttf);
+}
+
+.inform-text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.4em;
+	text-align: center;
+}
+
+.head-join{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5em;
+	text-align: center;
+	font-weight: 300;
+	transition: all 1s ease-in-out;
+	margin: 10px;
+	color: white;
+	border: white 3px solid;
+	padding: 10px;
+}
+
+.card {
+	margin: 10px;
+}
+
+.card-body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.fourth-screen {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+// footer style
+
+.footer {
+	margin: 5px;
+	padding: 5px;
+	height: 20vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	// background-color: rgb(247, 245, 245);
+}
+
+.social-media {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	height: 15vh;
+}
+.copyr p{
+	text-align: center;;
+	color: grey;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	margin: 0;
+}
+
+
+
+  

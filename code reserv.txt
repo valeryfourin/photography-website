@@ -1,4 +1,0 @@
-<div><a href="#"><img src="./icons/email.png"> example@.com</a></div>
-        <div><a href="#"><img src="./icons/whatsapp.png"> +1234567890</a></div>
-        <div><a href="#"><img src="./icons/instagram.png"> @katherineparisienne</a></div>
-        <div><a href="#"><img src="./icons/facebook.png"> Katherine Parisienne</a></div>
