@@ -60,14 +60,14 @@ for(let i in img)
 		return false;
 	});
 
-	//Chrome Smooth Scroll
-	try {
-		$.browserSelector();
-		if($("html").hasClass("chrome")) {
-			$.smoothScroll();
-		}
-	} catch(err) {
+	// //Chrome Smooth Scroll
+	// try {
+	// 	$.browserSelector();
+	// 	if($("html").hasClass("chrome")) {
+	// 		$.smoothScroll();
+	// 	}
+	// } catch(err) {
 
-	};
+	// };
 	
 });

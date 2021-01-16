@@ -11,6 +11,9 @@ img {
 }
 
 .lang {
+	position: fixed;
+	width: 99%;
+    z-index: 20;
 	margin: 5px;
 	display: flex;
 	align-items: flex-end;
@@ -62,8 +65,19 @@ header {
 	width: 25vw;
 	margin: 10px;
 	}
-
 }
+
+.cert-in-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.cert-in-column {
+	display: flex;
+	flex-direction: column;
+}
+
+// @media screen and (width)
 
 .free-space {
 	width: 100%;

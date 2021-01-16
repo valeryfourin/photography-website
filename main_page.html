@@ -12,13 +12,15 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
     <link rel="stylesheet" href="/fancybox3/dist/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="shortcut icon" href="/pictures/service/logo_rg8.png" type="image/x-icon">
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  </head>
 <body>
 
-  <div class="lang"> 
+  <div class="lang "> 
     <u><a href="./main_page.html">EN</a></u>&nbsp;<a href="../sp/main_page.html">ES</a>&nbsp;
   </div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+  <nav class="navbar navbar-expand-lg navbar-light" >
     <a class="navbar-brand logo" href="./main_page.html"><img src="../pictures/service/logo_rg8.png"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -45,7 +47,9 @@
     <!-- main banner slider -->
     <div class="first-screen ">
 
-        <div id="carouselExampleCaptions1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-container">
+
+        <div id="carouselExampleCaptions1" class="carousel slide main-banner" data-ride="carousel" >
           <div class="carousel-inner">
             <div class="carousel-item active">
               <img src="pictures/service/DSC07507.jpg" class="d-block" alt="Weddings">
@@ -57,10 +61,10 @@
               <img src="pictures/service/DSC09039.jpg" class="d-block" alt="Love Stories">
             </div>
             <div class="carousel-item">
-              <img src="pictures/service/DSC09661.jpg" class="d-block" alt="Love Stories">
+              <img src="pictures/service/DSC09661.JPG" class="d-block" alt="Love Stories">
             </div>
             <div class="carousel-item">
-              <img src="pictures/service/DSC09242.jpg" class="d-block" alt="Love Stories">
+              <img src="pictures/service/DSC09242.JPG" class="d-block" alt="Love Stories">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleCaptions1" role="button" data-slide="prev">
@@ -72,25 +76,28 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
-      
 
+      </div>
+        
     </div>
 
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"><img src="/icons/up-arrow.png"></a>
     
     <div class="second-screen">
       <div class="free-space"></div>
       <div class="second-screen-inform">
-
+        
         <div class="sec-scr-text">
-          <div><h1 class="head-join">Welcome! I'm glad to see you here!</h1></div>
-          <div><p class="inform-text">My name is Kate Novitska. </p></div>
+          <div><h1 class="head-join">Welcome!</h1></div>
+          <div><p class="inform-text">I am Kate Novitska and photography is my passion!</p></div>
           <div class="hello-buttons">
-            <a href="./about_page.html"><button type="button" class="btn btn-outline-info light-button">Get to know <br> more about me!</button></a>
-            <a href="./contact_page.html"><button type="button" class="btn btn-outline-secondary">Book a photoshoot now!</button></a>
+            <a href="./about_page.html"><button type="button" class="book-button" style="background-color: #d6d2d1;color: #6d6565">Get to know <br> more about me!</button></a>
+            <a href="./contact_page.html"><button type="button" class="book-button" style="background-color: #d9c4bf; color: #6d6565">Book a photoshoot <br> now!</button></a>
           </div>
-          <div><p class="inform-text">Photography is my passion. That is why I guarantee you an amusing pastime and gorgeous photos to remember. If interested, go take a look at some of my work. Hope you like it!</p></div>
+          <div><p class="inform-text">I can guarantee you that we will have a great time <br/> and in the end you will get beautiful photos to remember it. <br/> Take a look at my work. Hope you like it!</p></div>
         </div>
 
+        
         <div class="sec-scr-pic">
             <div class="sm-pic"><a data-fancybox="gallery" href="pictures/service/DSC09728.JPG"><img src="pictures/service/DSC09728.JPG"></div></a>
             <div class="sm-pic"><a data-fancybox="gallery" href="pictures/service/DSC05907new.jpg"><img src="pictures/service/DSC05907new.jpg"></div></a>
@@ -100,7 +107,12 @@
 
       </div>
       <div class="free-space"></div>
+      <div><p class="inform-text inspirational-quote" >More than a photo session, an unforgettable experience</p></div>
       <div class="second-screen-portf">
+
+	
+        
+        <div class="free-space"></div>
         
         <!-- big advertisement slider -->
         <div class="slider1">
@@ -118,7 +130,7 @@
                 <img src="pictures/carriona/DSC07767.jpg" class="d-block w-100" alt="Weddings">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Weddings</h5>
-                  <p>Such a tender and touching event which I would gladly make memorable for you.</p>
+                  <p>Incredible weddings - breathtaking photos.</p>
                 </div>
               </div>
               <div class="carousel-item ">
@@ -150,7 +162,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="pictures/natasha_guapulo/DSC05907new.jpg" class="d-block w-100" alt="Personal Photoshoots">
+                <img src="pictures/natasha_guapulo/DSC06115.jpg" class="d-block w-100" alt="Personal Photoshoots">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Personal Photoshoots</h5>
                   <p>Why not get a few gorgeous photos of your beautiful self?</p>
@@ -167,30 +179,31 @@
             </a>
           </div>
         </div>
-
-        
-        
-
-        <div class="free-space"></div>
-        <div><p class="inform-text">I would really like to work with you and help you make important moments everlasting.</p></div>
+   
         <div class="free-space"></div>
 
         <div class="mid-screen">
+
           <div class="mid-scr-col">
-            <div class="portf-img"><img src="../pictures/service/IMG_5616new.jpg"></div>
-            <div class="info-block first-inf"><p class="inform-text">We will prepare to this event together, whatever occasion this is.</p></div>
+            <p class="inform-text" style="text-align: right;">I would really like to work with you and help you make important moments everlasting.</p>
+            <div class="card">
+              <div class="card-body text"><a href="./portfolio_hacienda_la_carriona.html" class="link-secondary">Anna's fairytale</a></div>
+              <a href="./portfolio_hacienda_la_carriona.html"><img src="pictures/carriona/DSC07425.jpg" class="card-img-top portf-img"></a>
+            </div>
+
           </div>
           <div class="mid-scr-col">
-            <div class="info-block second-inf"><p class="inform-text">We will discuss everything concerning the event, to get the best shots ever. </p></div>
-            <div class="portf-img" id="block-portf-img right"><img src="../pictures/service/IMG_5640.JPG"></div>
+            <div class="card">
+              <a href="./portfolio_joss_miguel.html"><img src="pictures/joss_miguel/DSC08476crop.jpg" class="card-img-top portf-img"></a>
+              <div class="card-body text"><a href="./portfolio_joss_miguel.html" class="link-secondary">Joseline + Miguel. Love story</a></div>
+            </div>
+              <p class="inform-text" style="text-align: left;">We will prepare to your event together, to get the best shots ever.</p>
           </div>
-        </div>
+
+        </div> 
 
         <div class="free-space"></div>
-        <div><p class="inform-text">Also doing different kinds of photoshoots. <br> Just check these child photos.</p></div>
-        <div class="free-space"></div>
 
-        
       </div>
 
     </div>
@@ -200,20 +213,20 @@
       <div class="stories-wrap">
         
         <div class="card" style="width: 18rem;">
-          <a href="./portfolio_joss_miguel.html">
-            <img src="/pictures/service/iconstory_joss_miguel.jpg" class="card-img-top" alt="...">
+          <a href="./portfolio_dulce_espera.html">
+            <img src="/pictures/service/iconstory_dulce_espera.jpg" class="card-img-top" alt="...">
           </a>
             <div class="card-body text-center">
-              <a href="./portfolio_joss_miguel.html" class="link-secondary">Josseline and Miguel</a>
+              <a href="./portfolio_dulce_espera.html" class="link-secondary">Sweet Waiting</a>
             </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-          <a href="./portfolio_hacienda_la_carriona.html">
-            <img src="/pictures/service/iconstory_carriona.jpg" class="card-img-top" alt="...">
+          <a href="./portfolio_lightandsmile.html">
+            <img src="/pictures/service/iconstory_home_jose.jpg" class="card-img-top" alt="...">
           </a>
             <div class="card-body text-center">
-              <a href="./portfolio_hacienda_la_carriona.html" class="link-secondary">Hacienda la Carriona</a>
+              <a href="./portfolio_lightandsmile.html" class="link-secondary">Light and Smiles</a>
             </div>
         </div>
 
@@ -234,14 +247,14 @@
 
     <div class="fourth-screen">
       <div class="free-space"></div>
-      <div><p class="inform-text">Want a photoshoot just like these ones?<br> Feel free to contact me!</p></div>
-        <div><a href="./contact_page.html"><button type="button" class="btn btn-outline-secondary">Book a photoshoot now!</button></a></div>
+      <div><p class="inform-text">Be part of our stories - contact me!</p></div>
+        <div><a href="./contact_page.html"><button type="button" class="book-button" style="background-color: #d6d2d1;color: #6d6565">Book a photoshoot now!</button></a></div>
       <div class="free-space"></div>
     </div>
 
     <footer><div class="footer">
       <div class="social-media">
-        <div><a href="mailto:kate9ni@gmail.com" title="Email: kate9ni@gmail.com"><img src="/icons/email.png"></a></div>
+        <div><a href="mailto:katenovitska.photo@gmail.com" title="Email: katenovitska.photo@gmail.com"><img src="/icons/email.png"></a></div>
         <div><a href="https://wa.me/593939211809" title="WhatsApp: +593 93-921-1809"><img src="/icons/whatsapp.png"></a></div>
         <div><a href="https://www.instagram.com/katenovitska.photo/" title="Instagram"><img src="/icons/instagram.png"></a></div>
         <div><a href="https://www.facebook.com/katenovitska.photo/" title="Facebook"><img src="/icons/facebook.png"></a></div>
@@ -252,8 +265,10 @@
         <p>Web troubleshoot? Please contact valefourin@gmail.com</p>
         <p>2020</p>
       </div>
-      <div class="back-to-top" onclick="topFunction()" id="back-to-top" title="Go to top"><img src="/icons/up-arrow.png"></div>
+      <div></div>
     </div></footer>
+
+       
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -268,19 +283,36 @@
   <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="libs/masonry/masonry.pkgd.min.js"></script>
 
-  <!-- important files! -->
+  <!-- masonry, fancybox, disabling context menu and saving photos -->
   <script src="js/common.js"></script>
   <script src="fancybox3/dist/jquery.fancybox.js"></script>
 
+  
+  <!-- back to top button -->
   <script>
-    // creating back to top button:
-    mybutton = document.getElementById("back-to-top");
+    $(document).ready(function() {
+      $(window).scroll(function() {
+      if ($(this).scrollTop() > 20) {
+      $('#toTopBtn').fadeIn();
+      } else {
+      $('#toTopBtn').fadeOut();
+      }
+      });
 
-    // when the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
-  </script>
+      $('#toTopBtn').click(function() {
+      $("html, body").animate({
+      scrollTop: 0
+      }, 1000);
+      return false;
+      });
+      });
+
+</script>
+
+<script>
+  $('.carousel').carousel({
+        interval: 2000,
+      })
+</script>
 </body>
 </html>

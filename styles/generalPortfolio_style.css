@@ -21,6 +21,9 @@ img {
 }
 
 .lang {
+  position: fixed;
+  width: 99%;
+  z-index: 20;
   margin: 5px;
   display: -webkit-box;
   display: -ms-flexbox;

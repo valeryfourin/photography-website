@@ -3,6 +3,8 @@
 <head>
     <title>KN Photography</title>
     <meta charset="UTF-8">
+    <meta name="creator" content="Valery Novitska">
+    <meta name="copyright" content="Rights belong to Kate Novitska.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/main/main_page_style.css">
     <meta http-equiv="imagetoolbar" content="no" />
@@ -10,6 +12,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
     <link rel="stylesheet" href="../fancybox3/dist/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="shortcut icon" href="../pictures/service/logo_rg8.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -40,9 +43,14 @@
     </div>
   </nav>
 
+    <!-- main banner slider -->
+    
     <div class="first-screen">
       
-      <div id="carouselExampleCaptions1" class="carousel slide" data-ride="carousel">
+      <div class="carousel-container">
+
+      
+      <div id="carouselExampleCaptions1" class="carousel slide main-banner" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="../pictures/service/DSC07507.jpg" class="d-block" alt="Weddings">
@@ -54,10 +62,10 @@
             <img src="../pictures/service/DSC09039.jpg" class="d-block" alt="Love Stories">
           </div>
           <div class="carousel-item">
-            <img src="../pictures/service/DSC09661.jpg" class="d-block" alt="Love Stories">
+            <img src="../pictures/service/DSC09661.JPG" class="d-block" alt="Love Stories">
           </div>
           <div class="carousel-item">
-            <img src="../pictures/service/DSC09242.jpg" class="d-block" alt="Love Stories">
+            <img src="../pictures/service/DSC09242.JPG" class="d-block" alt="Love Stories">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions1" role="button" data-slide="prev">
@@ -69,20 +77,22 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
-
+    </div>
 
     </div>
     
+    <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"><img src="../icons/up-arrow.png"></a>
+
     <div class="second-screen">
       <div class="free-space"></div>
       <div class="second-screen-inform">
 
         <div class="sec-scr-text">
-          <div><h1 class="head-join">Bienvenidos! Estoy feliz de verte!</h1></div>
+          <div><h1 class="head-join">Bienvenidos!</h1></div>
           <div><p class="inform-text">Soy Kate Novitska. </p></div>
           <div class="hello-buttons">
-            <a href="./about_page.html"><button type="button" class="btn btn-outline-info light-button">Más sobre mi!</button></a>
-            <a href="./contact_page.html"><button type="button" class="btn btn-outline-secondary">Reserva una sesión de Fotos ahora!</button></a>
+            <a href="./about_page.html"><button type="button" class="book-button" style="background-color: #d6d2d1;color: #6d6565">Más sobre mi!</button></a>
+            <a href="./contact_page.html"><button type="button" class="book-button" style="background-color: #d9c4bf; color: #6d6565">Reserva una sesión de Fotos ahora!</button></a>
           </div>
           <div><p class="inform-text">La fotografía es mi pasión y mi mayor garantía es que pasaremos un gran momento y al final hermosas fotos para recordarlo. Mira un poco de mi trabajo. Espero que les guste!</p></div>
         </div>
@@ -96,8 +106,12 @@
 
       </div>
       <div class="free-space"></div>
+      <div><p class="inform-text inspirational-quote">Mas que una sesión de fotos, una experiencia inolvidable</p></div>
+
       <div class="second-screen-portf">
-        
+      
+      <div class="free-space"></div>
+        <!-- big advertisement slider -->
         <div class="slider1">
           <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -113,7 +127,7 @@
                 <img src="../pictures/carriona/DSC07767.jpg" class="d-block w-100" alt="Weddings">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Bodas</h5>
-                  <p>Such a tender and touching event which I would gladly make memorable for you.</p>
+                  <p>Bodas increibles - fotos sin precedentes.</p>
                 </div>
               </div>
               <div class="carousel-item">
@@ -145,7 +159,7 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <img src="../pictures/natasha_guapulo/DSC05907new.jpg" class="d-block w-100" alt="Personal Photoshoots">
+                <img src="../pictures/natasha_guapulo/DSC06115.jpg" class="d-block w-100" alt="Personal Photoshoots">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Sesiones personales</h5>
                   <p>No hay nadie más bello que tu. Tus fotos más bellas de lo que imaginaste.</p>
@@ -165,26 +179,30 @@
         
 
         <div class="free-space"></div>
-        <div><p class="inform-text">Me encantaría ser parte de sus momentos y hacerlos eternos.</p></div>
-        <div class="free-space"></div>
 
+        <!-- screen with two vertical photos -->
         <div class="mid-screen">
+
           <div class="mid-scr-col">
-            <div class="portf-img"><img src="../pictures/service/IMG_5616new.jpg"></div>
-            <div class="info-block first-inf"><p class="inform-text">Nos prepararemos para sus eventos juntos cualquier ocasión que sea!</p></div>
+            <p class="inform-text" style="text-align: right;">Me encantaría ser parte de sus momentos y hacerlos eternos.</p>
+            <div class="card">
+              <div class="card-body text"><a href="./portfolio_hacienda_la_carriona.html" class="link-secondary">El cuento de hadas de Anna</a></div>
+              <a href="./portfolio_hacienda_la_carriona.html"><img src="../pictures/carriona/DSC07425.jpg" class="card-img-top portf-img"></a>
+            </div>
+
           </div>
           <div class="mid-scr-col">
-            <div class="info-block second-inf"><p class="inform-text">Estaremos al punto sobre cada paso de su evento para obtener las mejores tomas. </p></div>
-            <div class="portf-img" id="block-portf-img right"><img src="../pictures/service/IMG_5640.JPG"></div>
+            <div class="card">
+              <a href="./portfolio_joss_miguel.html"><img src="../pictures/joss_miguel/DSC08476crop.jpg" class="card-img-top portf-img"></a>
+              <div class="card-body text"><a href="./portfolio_joss_miguel.html" class="link-secondary">Joseline + Miguel. Una historia de amor</a></div>
+            </div>
+              <p class="inform-text" style="text-align: left;">Nos prepararemos para su evento juntos, para obtener las mejores fotos.</p>
           </div>
+
         </div>
 
         <div class="free-space"></div>
-        <div><p class="inform-text">Hacemos fotos diferentes. <br> Mira una sesión de fotos con bebes!</p></div>
-        <div class="free-space"></div>
 
-      
-        
       </div>
 
     </div>
@@ -194,20 +212,20 @@
       <div class="stories-wrap">
         
         <div class="card" style="width: 18rem;">
-          <a href="portfolio_joss_miguel.html"> 
-            <img src="../pictures/service/iconstory_joss_miguel.jpg" class="card-img-top" alt="...">
+          <a href="portfolio_dulce_espera.html"> 
+            <img src="../pictures/service/iconstory_dulce_espera.jpg" class="card-img-top" alt="...">
           </a>
             <div class="card-body text-center">
-              <a href="portfolio_joss_miguel.html" class="link-secondary">Josseline y Miguel</a>
+              <a href="portfolio_dulce_espera.html" class="link-secondary">La dulce espera</a>
             </div>
         </div>
 
         <div class="card" style="width: 18rem;">
-          <a href="portfolio_hacienda_la_carriona.html">
-            <img src="../pictures/service/iconstory_carriona.jpg" class="card-img-top" alt="...">
+          <a href="portfolio_lightandsmile.html">
+            <img src="../pictures/service/iconstory_home_jose.jpg" class="card-img-top" alt="...">
           </a>
             <div class="card-body text-center">
-              <a href="portfolio_hacienda_la_carriona.html" class="link-secondary">Hacienda la Carriona</a>
+              <a href="portfolio_lightandsmile.html" class="link-secondary">Luz y sonrisas</a>
             </div>
         </div>
 
@@ -225,14 +243,14 @@
 
     <div class="fourth-screen">
       <div class="free-space"></div>
-      <div><p class="inform-text">Esto es solo un pedazo de nuestras historias si quieres compartir <br> con nosotros no dudes en contactarme!</p></div>
-        <div><a href="./contact_page.html"><button type="button" class="btn btn-outline-secondary">Reserva una sesión de Fotos ahora!</button></a></div>
+      <div><p class="inform-text">Se parte de nuestras historias - contactame!</p></div>
+        <div><a href="./contact_page.html"><button type="button" class="book-button" style="background-color: #d6d2d1;color: #6d6565">Reserva una sesión de Fotos ahora!</button></a></div>
       <div class="free-space"></div>
     </div>
 
     <footer><div class="footer" lang="en">
       <div class="social-media">
-        <div><a href="mailto:kate9ni@gmail.com" title="Email: kate9ni@gmail.com"><img src="../icons/email.png"></a></div>
+        <div><a href="mailto:katenovitska.photo@gmail.com" title="Email: katenovitska.photo@gmail.com"><img src="../icons/email.png"></a></div>
         <div><a href="https://wa.me/593939211809" title="WhatsApp: +593 93-921-1809"><img src="../icons/whatsapp.png"></a></div>
         <div><a href="https://www.instagram.com/katenovitska.photo/" title="Instagram"><img src="../icons/instagram.png"></a></div>
         <div><a href="https://www.facebook.com/katenovitska.photo/" title="Facebook"><img src="../icons/facebook.png"></a></div>
@@ -243,7 +261,7 @@
         <p>Web troubleshoot? Please contact valefourin@gmail.com</p>
         <p>2020</p>
       </div>
-      <div class="back-to-top" onclick="topFunction()" id="back-to-top" title="Go to top"><img src="../icons/up-arrow.png"></div>
+      <div></div>
     </div></footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -258,19 +276,28 @@
   <script src="../libs/modernizr/modernizr.js"></script>
   <script src="../libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
 
-  <!-- important files! -->
+  <!-- masonry, fancybox, disabling context menu and saving photos -->
   <script src="../js/common.js"></script>
   <script src="../fancybox3/dist/jquery.fancybox.js"></script>
 
   <script>
     // creating back to top button:
-    mybutton = document.getElementById("back-to-top");
+    $(document).ready(function() {
+      $(window).scroll(function() {
+      if ($(this).scrollTop() > 20) {
+      $('#toTopBtn').fadeIn();
+      } else {
+      $('#toTopBtn').fadeOut();
+      }
+      });
 
-    // when the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+      $('#toTopBtn').click(function() {
+      $("html, body").animate({
+      scrollTop: 0
+      }, 1000);
+      return false;
+      });
+      });
   </script>
 </body>
 </html>

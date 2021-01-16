@@ -11,6 +11,9 @@ img {
 }
 
 .lang {
+	position: fixed;
+	width: 99%;
+    z-index: 20;
 	margin: 5px;
 	display: flex;
 	align-items: flex-end;
@@ -79,7 +82,7 @@ header {
 }
 
 .left-photo img {
-	width: 30vw;
+	width: 25vw;
 }
 
 .free-space {
