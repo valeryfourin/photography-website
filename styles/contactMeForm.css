@@ -1,0 +1,94 @@
+input, textarea { 
+    outline: none;
+}
+h1 {
+    margin-top: 0;
+    font-weight: 500;
+}
+form {
+    margin-bottom: 50px;
+    position: relative;
+    width: 100%;
+    border-radius: 15px;
+    background: #e6e1e0;
+}  
+.form-inner {
+    padding: 40px;
+}
+.form-inner input,
+.form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+}
+.form-inner textarea {
+    resize: none;
+}
+button {
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+    border-bottom: 4px solid #d9c4bf;
+    background: #d9c4bf; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+button:hover {
+    background: #cfb4ad;
+} 
+@media (min-width: 568px) {
+    form {
+        min-width: 100%;
+    }
+}
+
+.book-button {
+    /* width: 200px; */
+    min-width: 100px;
+    height: 50px;
+    background-color: #d9c4bf;
+    color: #6d6565;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    
+}
+.book-button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.book-button:hover {
+    -webkit-box-shadow: -2px 5px 25px -5px rgba(0,0,0,0.89); 
+    box-shadow: -2px 5px 25px -5px rgba(0,0,0,0.89);
+}
+.book-button:hover:after {
+    left: 0;
+    width: 100%;
+}
+.book-button:active {
+    top: 2px;
+}
+      

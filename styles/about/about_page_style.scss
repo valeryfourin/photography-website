@@ -62,22 +62,31 @@ header {
 .certificates {
 	width: 40%;
 	img {
-	width: 25vw;
-	margin: 10px;
+	width: 30vw;
+	margin: 10px 10px;
 	}
 }
 
 .cert-in-row {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
 }
 
 .cert-in-column {
 	display: flex;
 	flex-direction: column;
+	height: 100%;
 }
 
-// @media screen and (width)
+@media screen and (max-width: 1300px) {
+	.certificates img { width: 40vw;}
+}
+@media screen and (max-width: 800px) {
+	.cert-in-row { flex-direction: column; }
+	.certificates img { width: 60vw;}
+}
 
 .free-space {
 	width: 100%;

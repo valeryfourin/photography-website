@@ -71,18 +71,12 @@ header {
 .carousel-container {
   margin: auto;
   height: auto;
-  width: 80vw;
+  width: 100vw;
   /* background-image: url(../../pictures/service/shutterstock_629910674new.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: center;
   	background-size: cover;*/
-}
-
-@media screen and (max-width: 1000px) {
-  .carousel-container {
-    width: 90vw;
-  }
 }
 
 .free-space {
@@ -415,7 +409,7 @@ header {
 }
 
 #carouselExampleCaptions1 .d-block {
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 

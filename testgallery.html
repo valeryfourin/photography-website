@@ -3,92 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../styles/generalPortfolio_style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../styles/generalPortfolio_style.css"> -->
     
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-    <link rel="stylesheet" href="/fancybox/source/jquery.fancybox.css?v=2.1.7" type="text/css" media="screen" />
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="libs/animate/animate.css" />
     <title>Document</title>
+    <style>
+      div {
+        margin: auto;
+        width: 300px;
+      }
+      #toTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    z-index: 9;
+    padding: 21px;
+    border-radius: 50%;
+    background-color: antiquewhite;
+    /* opacity: 0.5; */
+}
+
+.js .cd-top--fade-out {
+    opacity: .5;
+}
+
+.js .cd-top--is-visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.js .cd-top {
+    opacity: 1;
+    transition: opacity .3s, visibility .3s, background-color .3s;
+}
+
+.cd-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: var(--cd-back-to-top-margin);
+    right: 20px;
+    right: var(--cd-back-to-top-margin);
+    display: inline-block;
+    height: 40px;
+    height: var(--cd-back-to-top-size);
+    width: 40px;
+    width: var(--cd-back-to-top-size);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05) !important;
+	
+}
+    </style>
 </head>
 <body>
-    
-    <div class="container-fluid">
-      <div class="row">
-        <div class="masonry-container">
-          <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="../pictures/carriona/DSC06646.jpg"><img src="../pictures/carriona/DSC06646.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="../pictures/carriona/DSC06654.jpg"><img src="../pictures/carriona/DSC06654.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="../pictures/carriona/DSC06682.jpg"><img src="../pictures/carriona/DSC06682.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="../pictures/carriona/DSC06703.jpg"><img src="../pictures/carriona/DSC06703.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="pictures/carriona/DSC06716.jpg"><img src="pictures/carriona/DSC06716.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="pictures/carriona/DSC06721.jpg"><img src="pictures/carriona/DSC06721.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="pictures/carriona/DSC06768.jpg"><img src="pictures/carriona/DSC06768.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="pictures/carriona/DSC06782.jpg"><img src="pictures/carriona/DSC06782.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="pictures/carriona/DSC06817.jpg"><img src="pictures/carriona/DSC06817.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="pictures/carriona/DSC06899.jpg"><img src="pictures/carriona/DSC06899.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="pictures/carriona/DSC06910.jpg"><img src="pictures/carriona/DSC06910.jpg" alt=""></a></div>
-            <div class="col-md-3 col-sm-3 col-xs-6 item"><a class="fancybox" rel="gallery1" href="pictures/carriona/DSC06921.jpg"><img src="pictures/carriona/DSC06921.jpg" alt=""></a></div>
-        </div>
-      </div>
-    </div>
-        
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"><img src="/icons/up-arrow.png"></a>
+   
+    <div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro harum, alias fugiat odio est nesciunt optio exercitationem ducimus, mollitia totam, voluptates dolore atque aspernatur cupiditate inventore quasi qui consectetur doloremque!
+    Architecto unde rem laboriosam autem iste quia similique labore nesciunt tempora provident deleniti sint fuga explicabo quod dolorem, quaerat pariatur tempore nihil sapiente vitae accusantium consequatur facilis? Eos, consequuntur vero!
+    Quasi blanditiis nam molestiae amet dolorem ducimus sint laudantium architecto accusamus, illum, fugiat nostrum nulla. Maxime, aperiam! Officiis ad obcaecati mollitia? Laborum fugiat, nostrum iusto sit maiores aspernatur doloribus nobis.
+    Commodi mollitia iste beatae doloremque ut. Dolore et inventore, vel debitis quidem veniam expedita, voluptatibus corrupti numquam eum sit accusamus omnis repudiandae eligendi nemo nostrum rem? Incidunt non atque labore.
+    Nesciunt maxime tenetur illo. Eum beatae, quas, aliquid eius quasi odit nobis ab architecto officiis provident ducimus facilis consequuntur consectetur culpa recusandae facere magni quod reiciendis. Illum vitae laborum doloribus?
+    Nesciunt, sapiente eos tenetur asperiores esse praesentium aliquid architecto aperiam! Quis nulla ex fuga libero reiciendis dignissimos cum omnis, quo delectus necessitatibus ad quaerat aspernatur aliquid suscipit tenetur nesciunt itaque.
+    Voluptas exercitationem culpa dolore architecto nulla deserunt corrupti iusto asperiores nesciunt molestias ad esse delectus dolorem possimus vero ipsum inventore, maiores modi iste recusandae earum qui adipisci. Excepturi, odit rerum.
+    Voluptas tempora soluta explicabo numquam voluptatum mollitia in modi repellat aspernatur, dolor animi non, dolores aperiam dignissimos tenetur rerum sed nisi, ipsum aut atque? Porro sit totam velit eveniet a.
+    Quibusdam, veritatis necessitatibus voluptas eum repudiandae ipsum, quas quasi, ipsa iure corrupti obcaecati. Ipsum earum, repudiandae, sequi alias tempore quaerat quidem ad quisquam natus nemo molestiae veritatis cum aperiam harum.
+    Vero quam dolorum dicta animi consectetur dolore quia in sit sed magnam, voluptate temporibus laborum earum? Odit, blanditiis! Quasi, aspernatur. Corporis error est, dolore accusantium odio quaerat magnam repellat quisquam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro harum, alias fugiat odio est nesciunt optio exercitationem ducimus, mollitia totam, voluptates dolore atque aspernatur cupiditate inventore quasi qui consectetur doloremque!
+      Architecto unde rem laboriosam autem iste quia similique labore nesciunt tempora provident deleniti sint fuga explicabo quod dolorem, quaerat pariatur tempore nihil sapiente vitae accusantium consequatur facilis? Eos, consequuntur vero!
+      Quasi blanditiis nam molestiae amet dolorem ducimus sint laudantium architecto accusamus, illum, fugiat nostrum nulla. Maxime, aperiam! Officiis ad obcaecati mollitia? Laborum fugiat, nostrum iusto sit maiores aspernatur doloribus nobis.
+      Commodi mollitia iste beatae doloremque ut. Dolore et inventore, vel debitis quidem veniam expedita, voluptatibus corrupti numquam eum sit accusamus omnis repudiandae eligendi nemo nostrum rem? Incidunt non atque labore.
+      Nesciunt maxime tenetur illo. Eum beatae, quas, aliquid eius quasi odit nobis ab architecto officiis provident ducimus facilis consequuntur consectetur culpa recusandae facere magni quod reiciendis. Illum vitae laborum doloribus?
+      Nesciunt, sapiente eos tenetur asperiores esse praesentium aliquid architecto aperiam! Quis nulla ex fuga libero reiciendis dignissimos cum omnis, quo delectus necessitatibus ad quaerat aspernatur aliquid suscipit tenetur nesciunt itaque.
+      Voluptas exercitationem culpa dolore architecto nulla deserunt corrupti iusto asperiores nesciunt molestias ad esse delectus dolorem possimus vero ipsum inventore, maiores modi iste recusandae earum qui adipisci. Excepturi, odit rerum.
+      Voluptas tempora soluta explicabo numquam voluptatum mollitia in modi repellat aspernatur, dolor animi non, dolores aperiam dignissimos tenetur rerum sed nisi, ipsum aut atque? Porro sit totam velit eveniet a.
+      Quibusdam, veritatis necessitatibus voluptas eum repudiandae ipsum, quas quasi, ipsa iure corrupti obcaecati. Ipsum earum, repudiandae, sequi alias tempore quaerat quidem ad quisquam natus nemo molestiae veritatis cum aperiam harum.
+      Vero quam dolorum dicta animi consectetur dolore quia in sit sed magnam, voluptate temporibus laborum earum? Odit, blanditiis! Quasi, aspernatur. Corporis error est, dolore accusantium odio quaerat magnam repellat quisquam?</p>
+  </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-    <script>
-
-      // creating back to top button:
-      mybutton = document.getElementById("back-to-top");
-
-      // when the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-      }
-  </script>
-
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
-
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-
-    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
-    <script src="libs/modernizr/modernizr.js"></script>
-    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script src="libs/waypoints/waypoints.min.js"></script>
-    <!-- <script src="libs/plugins-scroll/plugins-scroll.js"></script> -->
-    <script src="libs/animate/animate-css.js"></script>
-
-    <script src="libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
-    <!-- <script src="libs/imagefill/jquery-imagefill.js"></script> -->
-    <script src="libs/masonry/masonry.pkgd.min.js"></script>
-    
-    <script src="js/common.js"></script>
-    <!-- Add jQuery library -->
-    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script> -->
-    <!-- Add mousewheel plugin (this is optional) -->
-    <script type="text/javascript" src="/fancybox/lib/jquery.mousewheel.pack.js"></script>
-
-    <!-- Add fancyBox -->
-    <script type="text/javascript" src="/fancybox/source/jquery.fancybox.pack.js?v=2.1.7"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
-    <script type="text/javascript" src="/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
     
     
     <script type="text/javascript">
-
-      $(document).ready(function() {
-      $(".fancybox").fancybox({
-        openEffect	: 'fade',
-        closeEffect	: 'fade'
-      });
-    });
+$(window).scroll(function(){
+		if (document.documentElement.scrollTop() > 50) {
+			$('#toTopBtn').fadeIn();
+		} else {
+			$('#toTopBtn').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('#toTopBtn').click(function(){
+		$('html, body').animate({scrollTop : 0},500);
+		return false;
+	});
     </script>
     
 </body>

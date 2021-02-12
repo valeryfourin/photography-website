@@ -11,8 +11,17 @@
     <link rel="stylesheet" href="../fancybox3/dist/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="../libs/animate/animate.css" />
     <link rel="shortcut icon" href="../pictures/logo_rg8.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../styles/preloaderStyle.css">
+    <link rel="stylesheet" type="text/css" href="../styles/toTopBtn.css">
+    
+    <script src="../js/includeHtml.js"></script>
 </head>
 <body>
+  <div include-html="../preloader.html"></div>
+  <script> includeHTML(); </script>
+
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"><img src="/icons/up-arrow.png"></a>
+    
 
   <div class="lang"> 
     <a href="../portfolio_valery_in_flowers.html">EN</a>&nbsp;<u><a href="./portfolio_valery_in_flowers.html">ES</a></u>&nbsp;
@@ -50,25 +59,25 @@
     <div class="second-screen">
       <div class="container-fluid" >
         <div class="row-masonry">
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04922new.jpg"><img src="../pictures/valery_in_flowers/DSC04922new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04927new.jpg"><img src="../pictures/valery_in_flowers/DSC04927new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04957new.jpg"><img src="../pictures/valery_in_flowers/DSC04957new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04966new.jpg"><img src="../pictures/valery_in_flowers/DSC04966new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04980new.jpg"><img src="../pictures/valery_in_flowers/DSC04980new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04990new.jpg"><img src="../pictures/valery_in_flowers/DSC04990new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04991new.jpg"><img src="../pictures/valery_in_flowers/DSC04991new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05002new.jpg"><img src="../pictures/valery_in_flowers/DSC05002new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05012new.jpg"><img src="../pictures/valery_in_flowers/DSC05012new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05014new.jpg"><img src="../pictures/valery_in_flowers/DSC05014new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05020new.jpg"><img src="../pictures/valery_in_flowers/DSC05020new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05034new.jpg"><img src="../pictures/valery_in_flowers/DSC05034new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05034new.jpg"><img src="../pictures/valery_in_flowers/DSC05040new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05041new.jpg"><img src="../pictures/valery_in_flowers/DSC05041new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05052new.jpg"><img src="../pictures/valery_in_flowers/DSC05052new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05059new.jpg"><img src="../pictures/valery_in_flowers/DSC05059new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05080new.jpg"><img src="../pictures/valery_in_flowers/DSC05080new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05085new.jpg"><img src="../pictures/valery_in_flowers/DSC05085new.jpg"></a></div>
-          <div class="col-md-4 col-sm-6 col-xs-6 item"><a data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05088new.jpg"><img src="../pictures/valery_in_flowers/DSC05088new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04922new.jpg"><a><img src="../pictures/valery_in_flowers/DSC04922new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04927new.jpg"><a><img src="../pictures/valery_in_flowers/DSC04927new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04957new.jpg"><a><img src="../pictures/valery_in_flowers/DSC04957new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04966new.jpg"><a><img src="../pictures/valery_in_flowers/DSC04966new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04980new.jpg"><a><img src="../pictures/valery_in_flowers/DSC04980new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04990new.jpg"><a><img src="../pictures/valery_in_flowers/DSC04990new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC04991new.jpg"><a><img src="../pictures/valery_in_flowers/DSC04991new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05002new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05002new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05012new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05012new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05014new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05014new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05020new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05020new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05034new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05034new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05034new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05040new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05041new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05041new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05052new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05052new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05059new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05059new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05080new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05080new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05085new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05085new.jpg"></a></div>
+          <div class="col-md-4 col-sm-6 col-xs-6 item" data-fancybox="gallery" href="../pictures/valery_in_flowers/DSC05088new.jpg"><a><img src="../pictures/valery_in_flowers/DSC05088new.jpg"></a></div>
         </div>
       </div>
     </div>
@@ -83,21 +92,7 @@
     </div>
     
     
-    <footer><div class="footer" lang="en">
-      <div class="social-media">
-        <div><a href="mailto:katenovitska.photo@gmail.com" title="Email: katenovitska.photo@gmail.com"><img src="../icons/email.png"></a></div>
-        <div><a href="https://wa.me/593939211809" title="WhatsApp: +593 93-921-1809"><img src="../icons/whatsapp.png"></a></div>
-        <div><a href="https://www.instagram.com/katenovitska.photo/" title="Instagram"><img src="../icons/instagram.png"></a></div>
-        <div><a href="https://www.facebook.com/katenovitska.photo/" title="Facebook"><img src="../icons/facebook.png"></a></div>
-      </div>
-      <div class="copyr">
-        <p>Photographer Katherine Novitska</p>
-        <p>Designed and created by Valery Novitska</p>
-        <p>Web troubleshoot? Please contact valefourin@gmail.com</p>
-        <p>2020</p>
-      </div>
-      <div class="back-to-top" onclick="topFunction()" id="back-to-top" title="Go to top"><img src="../icons/up-arrow.png"></div>
-    </div></footer>
+    <div class="footer" include-html="../footer.html"></div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -122,15 +117,32 @@
   <script src="../js/common.js"></script>
   <script src="../fancybox3/dist/jquery.fancybox.js"></script>
 
+  <!-- back to top button -->
   <script>
-    // creating back to top button:
-    mybutton = document.getElementById("back-to-top");
+    $(window).scroll(function(){
+		if (document.body.scrollTop() > 50) {
+			$('#toTopBtn').fadeIn();
+		} else {
+			$('#toTopBtn').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('#toTopBtn').click(function(){
+		$('html, body').animate({scrollTop : 0},500);
+		return false;
+	});
+</script>
 
-    // when the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  <script>
+    // hiding preloader when page is loaded
+    window.onload = function() {
+      document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
   </script>
 </body>
 </html>

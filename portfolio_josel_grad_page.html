@@ -11,8 +11,17 @@
     <link rel="stylesheet" href="/fancybox3/dist/jquery.fancybox.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="libs/animate/animate.css" />
     <link rel="shortcut icon" href="../pictures/logo_rg8.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/preloaderStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/toTopBtn.css">
+    
+    <script src="js/includeHtml.js"></script>
 </head>
 <body>
+  <div include-html="preloader.html"></div>
+  <script> includeHTML(); </script>
+
+  <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"><img src="/icons/up-arrow.png"></a>
+  
 
   <div class="lang"> 
     <u><a href="./portfolio_josel_grad_page.html">EN</a></u>&nbsp;<a href="../sp/portfolio_josel_grad_page.html">ES</a>&nbsp;
@@ -50,17 +59,17 @@
     <div class="second-screen">
       <div class="container-fluid" >
         <div class="row-masonry">
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03864new.jpg"><img src="pictures/jose_graduation/DSC03864new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03569new.jpg"><img src="pictures/jose_graduation/DSC03569new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03601new.jpg"><img src="pictures/jose_graduation/DSC03601new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03613new.jpg"><img src="pictures/jose_graduation/DSC03613new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03693new.jpg"><img src="pictures/jose_graduation/DSC03693new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03872new.jpg"><img src="pictures/jose_graduation/DSC03872new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03746new.jpg"><img src="pictures/jose_graduation/DSC03746new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03788new.jpg"><img src="pictures/jose_graduation/DSC03788new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03523new.jpg"><img src="pictures/jose_graduation/DSC03523new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03817new.jpg"><img src="pictures/jose_graduation/DSC03817new.jpg"></a></div>
-        <div class="col-md-3 col-sm-4 col-xs-6 item"><a data-fancybox="gallery" href="pictures/jose_graduation/DSC03779var1.gif"><img src="pictures/jose_graduation/DSC03779var1.gif"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03864new.jpg"><a><img src="pictures/jose_graduation/DSC03864new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03569new.jpg"><a><img src="pictures/jose_graduation/DSC03569new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03601new.jpg"><a><img src="pictures/jose_graduation/DSC03601new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03613new.jpg"><a><img src="pictures/jose_graduation/DSC03613new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03693new.jpg"><a><img src="pictures/jose_graduation/DSC03693new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03872new.jpg"><a><img src="pictures/jose_graduation/DSC03872new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03746new.jpg"><a><img src="pictures/jose_graduation/DSC03746new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03788new.jpg"><a><img src="pictures/jose_graduation/DSC03788new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03523new.jpg"><a><img src="pictures/jose_graduation/DSC03523new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03817new.jpg"><a><img src="pictures/jose_graduation/DSC03817new.jpg"></a></div>
+        <div class="col-md-3 col-sm-4 col-xs-6 item" data-fancybox="gallery" href="pictures/jose_graduation/DSC03779var1.gif"><a><img src="pictures/jose_graduation/DSC03779var1.gif"></a></div>
       </div>
     </div>
   </div>
@@ -76,21 +85,7 @@
     </div>
     
     
-    <footer><div class="footer">
-      <div class="social-media">
-        <div><a href="mailto:katenovitska.photo@gmail.com" title="Email: katenovitska.photo@gmail.com"><img src="../icons/email.png"></a></div>
-        <div><a href="https://wa.me/593939211809" title="WhatsApp: +593 93-921-1809"><img src="../icons/whatsapp.png"></a></div>
-        <div><a href="https://www.instagram.com/katenovitska.photo/" title="Instagram"><img src="../icons/instagram.png"></a></div>
-        <div><a href="https://www.facebook.com/katenovitska.photo/" title="Facebook"><img src="../icons/facebook.png"></a></div>
-      </div>
-      <div class="copyr">
-        <p>Photographer Katherine Novitska</p>
-        <p>Designed and created by Valery Novitska</p>
-        <p>Web troubleshoot? Please contact valefourin@gmail.com</p>
-        <p>2020</p>
-      </div>
-      <div class="back-to-top" onclick="topFunction()" id="back-to-top" title="Go to top"><img src="../icons/up-arrow.png"></div>
-    </div></footer>
+    <div class="footer" include-html="footer.html"></div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -114,15 +109,32 @@
   <script src="js/common.js"></script>
   <script src="fancybox3/dist/jquery.fancybox.js"></script>
 
+  <!-- back to top button -->
   <script>
-    // creating back to top button:
-    mybutton = document.getElementById("back-to-top");
+    $(window).scroll(function(){
+		if (document.body.scrollTop() > 50) {
+			$('#toTopBtn').fadeIn();
+		} else {
+			$('#toTopBtn').fadeOut();
+		}
+	});
+	
+	//Click event to scroll to top
+	$('#toTopBtn').click(function(){
+		$('html, body').animate({scrollTop : 0},500);
+		return false;
+	});
+</script>
 
-    // when the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+  <script>
+    // hiding preloader when page is loaded
+    window.onload = function() {
+      document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
   </script>
 </body>
 </html>

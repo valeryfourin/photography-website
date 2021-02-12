@@ -7,8 +7,16 @@
     <link rel="stylesheet" type="text/css" href="../styles/contact/contact_page_style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="shortcut icon" href="../pictures/logo_rg8.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="styles/preloaderStyle.css">
+    <link rel="stylesheet" type="text/css" href="styles/contactMeForm.css">
+
+    <script src="js/includeHtml.js"></script>
 </head>
 <body>
+  <div include-html="preloader.html"></div>
+  <script>
+    includeHTML();
+  </script>
 
   <div class="lang"> 
     <u><a href="./contact_page.html">EN</a></u>&nbsp;<a href="../sp/contact_page.html">ES</a>&nbsp;
@@ -44,7 +52,7 @@
           <div><p class="inform-text">My current location is Quito, Ecuador</p></div>
           <div><p class="inform-text">But I'm open to new suggestions and ready to hold a photoshoot in your country if you are not in Ecuador</p></div>
           <div><p class="inform-text">Ready to shoot in USA, Europe, etc</p></div>
-          <div><p class="inform-text">If you want to book a photoshoot use any of these methods</p></div>
+          <div><p class="inform-text">If you want to book a photoshoot use contact form or any of these methods</p></div>
           <div><p class="inform-text"></p></div>
           <div><p class="inform-text">instagram: <b><a href="https://www.instagram.com/katenovitska.photo/">@katenovitska.photo</a></b></p></div>
           <div><p class="inform-text"><b>katenovitska.photo@gmail.com</b></p></div>
@@ -56,39 +64,40 @@
             <a href="https://www.facebook.com/katenovitska.photo/">Facebook</a>
           </b></p></div>
         </div>
-      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255347.02337720923!2d-78.57062294414438!3d-0.18625044949370773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a4002427c9f%3A0x44b991e158ef5572!2z0JrQuNGC0L4sINCt0LrQstCw0LTQvtGA!5e0!3m2!1sru!2sua!4v1597344434482!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+
+      <div class="contact-form">
+        <form class="needs-validation" action="https://formspree.io/f/mgepqpde" method="POST" >
+          <div class="form-inner">
+            <h1 class="head-join">Contact me</h1>
+            <input class="form-control" id="validationCustom01" type="text" name="name" placeholder="Your name" required>
+            <input class="form-control" id="validationCustom02" type="email" name="_replyto" placeholder="Email" required>
+            <textarea name="message" id="validationCustom03" class="form-control" id="validationTextarea" placeholder="Tell me about your event..." rows="5" required></textarea>
+            <button type="submit" class="book-button">Send</button>
+          </div>
+        </form>
+      </div>
+
     </div>
     
     
-    <footer><div class="footer">
-      <div class="social-media">
-        <div><a href="mailto:katenovitska.photo@gmail.com" title="Email: katenovitska.photo@gmail.com"><img src="../icons/email.png"></a></div>
-        <div><a href="https://wa.me/593939211809" title="WhatsApp: +593 93-921-1809"><img src="../icons/whatsapp.png"></a></div>
-        <div><a href="https://www.instagram.com/katenovitska.photo/" title="Instagram"><img src="../icons/instagram.png"></a></div>
-        <div><a href="https://www.facebook.com/katenovitska.photo/" title="Facebook"><img src="../icons/facebook.png"></a></div>
-      </div>
-      <div class="copyr">
-        <p>Photographer Katherine Novitska</p>
-        <p>Designed and created by Valery Novitska</p>
-        <p>Web troubleshoot? Please contact valefourin@gmail.com</p>
-        <p>2020</p>
-      </div>
-      <div class="back-to-top" onclick="topFunction()" id="back-to-top" title="Go to top"><img src="../icons/up-arrow.png"></div>
-    </div></footer>
+    <div class="footer" include-html="footer.html"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script>
+    
+    
 
-        // creating back to top button:
-        mybutton = document.getElementById("back-to-top");
+  <script>
+    // hiding preloader when page is loaded
+    window.onload = function() {
+      document.body.classList.add('loaded_hiding');
+        window.setTimeout(function () {
+          document.body.classList.add('loaded');
+          document.body.classList.remove('loaded_hiding');
+        }, 500);
+    }
+  </script>
 
-        // when the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-          document.body.scrollTop = 0; // For Safari
-          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
 </body>
 </html>
