@@ -82,11 +82,12 @@ header {
 }
 
 .navbar {
-	overflow: hidden;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+
+
 
 .bg-light {
 	background-color: white !important;
@@ -312,15 +313,19 @@ header {
 	7px 7px 20px 0px rgba(0,0,0,.1),
 	4px 4px 5px 0px rgba(0,0,0,.1);
 	border-radius: 50px;
-	transition: all 0.3s ease;
+	transition: all 1s ease-in-out;
   }
   .book-button:hover {
+	  
+	transition: all 1s ease-in-out;
 	-webkit-box-shadow: -2px 5px 25px -5px rgba(0,0,0,0.89); 
 	box-shadow: -2px 5px 25px -5px rgba(0,0,0,0.89);
   }
   .book-button:hover:after {
 	left: 0;
 	width: 100%;
+	
+	transition: all 1s ease-in-out;
   }
   .book-button:active {
 	top: 2px;

@@ -7,6 +7,9 @@
     <meta name="copyright" content="Rights belong to Kate Novitska.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../styles/main/main_page_style.css">
+
+    <link rel="stylesheet" type="text/css" href="../styles/dropdownlink.css">
+
     <meta http-equiv="imagetoolbar" content="no" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
@@ -14,7 +17,11 @@
     <link rel="shortcut icon" href="../pictures/service/logo_rg8.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../styles/preloaderStyle.css">
+
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     <script src="../js/includeHtml.js"></script>
 </head>
 <body>
@@ -35,8 +42,20 @@
         <li class="nav-item active">
           <a class="nav-link" href="./main_page.html">PRINCIPAL <span class="sr-only">(current)</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="./portfolio_page.html">PORTAFOLIO</a>
+        <li class="nav-item dropdown">
+
+          <a class="nav-link " href="./portfolio_page.html" style="padding-right: 0;">PORTFOLIO</a>
+          <div class="dropdown">
+            <button class="btn-link" >
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-content">
+              <li><a class="dropdown-item" href="./portfolio_page_weddings.html">BODAS</a></li>
+              <li><a class="dropdown-item" href="./portfolio_page_lovestories.html">HISTORIAS DE AMOR</a></li>
+              <li><a class="dropdown-item" href="./portfolio_page_portraits.html">RETRATOS</a></li>
+            </ul>
+          </div>
+
         </li>
         <li class="nav-item">
           <a class="nav-link" href="./about_page.html">SOBRE MI</a>
@@ -61,16 +80,13 @@
             <img src="../pictures/service/DSC07507crop.jpg" class="d-block" alt="Weddings">
           </div>
           <div class="carousel-item ">
-            <img src="../pictures/service/DSC08361crop.jpg" class="d-block" alt="Love Stories">
+            <img src="../pictures/service/DSC06167crop.jpg" class="d-block" alt="Love Stories">
           </div>
           <div class="carousel-item">
-            <img src="../pictures/service/DSC09039crop.jpg" class="d-block" alt="Love Stories">
+            <img src="../pictures/service/DSC05791crop.jpg" class="d-block" alt="Weddings">
           </div>
           <div class="carousel-item">
-            <img src="../pictures/service/DSC09661crop.jpg" class="d-block" alt="Love Stories">
-          </div>
-          <div class="carousel-item">
-            <img src="../pictures/service/DSC09242crop.jpg" class="d-block" alt="Love Stories">
+            <img src="../pictures/service/DSC05724crop.jpg" class="d-block" alt="Weddings">
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleCaptions1" role="button" data-slide="prev">
@@ -104,9 +120,9 @@
 
         <div class="sec-scr-pic">
             <div class="sm-pic"><a data-fancybox="gallery" href="../pictures/service/DSC09728.JPG"><img src="../pictures/service/DSC09728.JPG"></div></a>
-            <div class="sm-pic"><a data-fancybox="gallery" href="../pictures/service/DSC05907new.jpg"><img src="../pictures/service/DSC05907new.jpg"></div></a>
+            <div class="sm-pic"><a data-fancybox="gallery" href="../pictures/quinta_almonte/DSC06438.jpg"><img src="../pictures/quinta_almonte/DSC06438.jpg"></div></a>
             <div class="sm-pic"><a data-fancybox="gallery" href="../pictures/service/DSC07133.jpg"><img src="../pictures/service/DSC07133.jpg"></div></a>
-            <div class="sm-pic"><a data-fancybox="gallery" href="../pictures/service/DSC09017.jpg"><img src="../pictures/service/DSC09017.jpg"></div></a>
+            <div class="sm-pic"><a data-fancybox="gallery" href="../pictures/quinta_almonte/DSC05937.jpg"><img src="../pictures/quinta_almonte/DSC05937.jpg"></div></a>
         </div>
 
       </div>
@@ -198,8 +214,8 @@
           </div>
           <div class="mid-scr-col">
             <div class="card">
-              <a href="./portfolio_joss_miguel.html"><img src="../pictures/joss_miguel/DSC08476crop.jpg" class="card-img-top portf-img"></a>
-              <div class="card-body text"><a href="./portfolio_joss_miguel.html" class="link-secondary">Joseline + Miguel. Una historia de amor</a></div>
+              <a href="./portfolio_quinta_almonte.html"><img src="../pictures/quinta_almonte/DSC06372.jpg" class="card-img-top portf-img"></a>
+              <div class="card-body text"><a href="./portfolio_quinta_almonte.html" class="link-secondary">Valeria + Ricardo Quinta Almonte</a></div>
             </div>
               <p class="inform-text" style="text-align: left;">Nos prepararemos para su evento juntos, para obtener las mejores fotos.</p>
           </div>
@@ -217,20 +233,11 @@
       <div class="stories-wrap">
         
         <div class="card" style="width: 18rem;">
-          <a href="portfolio_dulce_espera.html"> 
-            <img src="../pictures/service/iconstory_dulce_espera.jpg" class="card-img-top" alt="...">
+          <a href="./portfolio_nika_david.html">
+            <img src="../pictures/service/iconstory_nika_david.jpg" class="card-img-top" alt="Nika + David Love story">
           </a>
             <div class="card-body text-center">
-              <a href="portfolio_dulce_espera.html" class="link-secondary">La dulce espera</a>
-            </div>
-        </div>
-
-        <div class="card" style="width: 18rem;">
-          <a href="portfolio_natasha_metropolitano.html">
-            <img src="../pictures/service/iconstory_metropolitano.jpg" class="card-img-top" alt="...">
-          </a>
-            <div class="card-body text-center">
-              <a href="portfolio_natasha_metropolitano.html" class="link-secondary">Chica-verano</a>
+              <a href="./portfolio_nika_david.html" class="link-secondary">Nika + David Love story</a>
             </div>
         </div>
 
@@ -240,6 +247,15 @@
           </a>
             <div class="card-body text-center">
               <a href="portfolio_masha_hermann.html" class="link-secondary">Masha y Hermann</a>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+          <a href="./portfolio_joss_miguel.html">
+            <img src="../pictures/service/iconstory_joss_miguel.jpg" class="card-img-top" alt="Joseline + Miguel">
+          </a>
+            <div class="card-body text-center">
+              <a href="./portfolio_joss_miguel.html" class="link-secondary">Joseline + Miguel</a>
             </div>
         </div>
 

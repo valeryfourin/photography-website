@@ -15,7 +15,7 @@ img {
 	width: 99%;
     z-index: 20;
 	margin: 5px;
-	display: flex;
+	display: flex; 
 	align-items: flex-end;
 	justify-content: flex-end;
 	a {
@@ -48,7 +48,7 @@ header {
 .first-screen {
 	// height: 75vh;
 	width: 100vw;
-	height: 50vh;
+	height: 50vh; 
 	background-image: url(../../pictures/service/DSC094641.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -143,8 +143,14 @@ header {
 	padding: 10px;
 }
 
+.category-section {
+	width: 80vw;
+}
+
 .card {
 	margin: 0 auto 20px auto;
+	width: 22rem;
+	
 }
 
 .card-body {
@@ -162,7 +168,23 @@ header {
 	align-items: center;
 }
 
+@media screen and (max-width: 1500px) {
+	.card {
+		width: 20rem;
+	}
+}
 
+@media screen and (max-width: 1350px) {
+	.card {
+		width: 18rem;
+	}
+}
+
+@media screen and (max-width: 1230px) {
+	.card {
+		width: 16rem;
+	}
+}
 
 // footer style
 

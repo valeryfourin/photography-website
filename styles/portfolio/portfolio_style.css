@@ -172,8 +172,13 @@ header {
   padding: 10px;
 }
 
+.category-section {
+  width: 80vw;
+}
+
 .card {
   margin: 0 auto 20px auto;
+  width: 22rem;
 }
 
 .card-body {
@@ -206,6 +211,24 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 1500px) {
+  .card {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .card {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 1230px) {
+  .card {
+    width: 16rem;
+  }
 }
 
 .footer {
